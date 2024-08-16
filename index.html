@@ -11,6 +11,41 @@
             <input type="text" placeholder="Enter city name" spellcheck="false">
             <button><img src="images/search.png"></button>
         </div>
+        <div class="weather">
+            <img src="images/rain.png" class="weather-icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+<script>
+
+    const apikey = "6cf0b37af6caf319e3e01156e020adce";
+    const apiurl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=karachi";
+
+    async function checkWeather(){
+        const response = await fetch(apiurl + `&appid=${apikey}`);
+        var data = await response.json()
+        
+        console.log(data)
+    }
+checkWeather();
+</script>
+
 </body>
 </html>
