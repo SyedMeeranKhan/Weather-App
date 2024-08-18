@@ -44,14 +44,14 @@ To run the Weather App locally:
 
 This project uses the OpenWeatherMap API. You need to replace the `apikey` variable in the `index.html` file with your own API key:
 
-```javascript
+```javascript```
 const apikey = "your_api_key_here";
+
 
 
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request for any features, bug fixes, or improvements.
-
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](https://opensource.org/licenses/MIT)
